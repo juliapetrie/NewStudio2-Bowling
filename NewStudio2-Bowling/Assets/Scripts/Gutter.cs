@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class gutter : MonoBehaviour
+public class Gutter : MonoBehaviour
 {
 
     private void OnTriggerEnter(Collider triggeredBody)
@@ -23,15 +23,5 @@ public class gutter : MonoBehaviour
 
 
     }
-    // // Start is called once before the first execution of Update after the MonoBehaviour is created
-    // void Start()
-    // {
-        
-    // }
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
+    
 }
