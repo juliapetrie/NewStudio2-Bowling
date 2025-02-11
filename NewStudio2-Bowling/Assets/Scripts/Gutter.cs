@@ -40,7 +40,7 @@ public class Gutter : MonoBehaviour
 
         // Now we add force in the forward direction of the gutter
         Debug.Log("🚀 Applying force in direction: " + transform.forward + " with magnitude: " + velocityMagnitude);
-        ballRigidBody.AddForce(transform.forward * velocityMagnitude, ForceMode.VelocityChange);
+        ballRigidBody.AddForce(transform.up * velocityMagnitude, ForceMode.VelocityChange);
         Debug.Log("✅ Force applied!");
         
         // Check if the force applied was significant
