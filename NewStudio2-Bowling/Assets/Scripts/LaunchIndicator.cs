@@ -13,6 +13,16 @@ public class LaunchIndicator : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,transform.rotation.eulerAngles.y,0);
         // transform.forward = new Vector3(freeLookCamera.transform.forward.x, 0, freeLookCamera.transform.forward.z);
 
+    //     if (freeLookCamera != null)
+    // {
+    //     Debug.Log("FreeLook Camera Forward: " + freeLookCamera.transform.forward);
+    // }
+    // else
+    // {
+    //     Debug.LogError("FreeLook Camera is NULL!");
+    // }
+        
+
         Debug.Log(transform.rotation.eulerAngles);
     }
 
