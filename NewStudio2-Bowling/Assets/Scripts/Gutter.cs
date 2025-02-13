@@ -4,6 +4,9 @@ public class Gutter : MonoBehaviour
 {
     private void OnTriggerEnter(Collider triggeredBody)
     {
+
+         if (!triggeredBody.CompareTag("Ball")){return;}
+        
         // we first get the rigidbody of the ball
         // and store it in a local variable ballRigidBody
         Rigidbody ballRigidBody = triggeredBody.GetComponent<Rigidbody>();
