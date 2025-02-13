@@ -2210,6 +2210,22 @@ PrefabInstance:
       propertyPath: inputManager
       value: 
       objectReference: {fileID: 2139545074}
+    - target: {fileID: 2149011020703632486, guid: 7ec429121433fce418731ce0c6bc7ceb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149011020703632486, guid: 7ec429121433fce418731ce0c6bc7ceb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581458835990118598, guid: 7ec429121433fce418731ce0c6bc7ceb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581458835990118598, guid: 7ec429121433fce418731ce0c6bc7ceb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 6838187931716789304, guid: 7ec429121433fce418731ce0c6bc7ceb, type: 3}
       propertyPath: freeLookCamera
       value: 

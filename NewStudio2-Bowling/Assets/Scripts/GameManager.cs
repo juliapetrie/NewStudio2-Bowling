@@ -18,13 +18,7 @@ public class GameManager : MonoBehaviour
         // Adding the HandleReset function as a listener to our OnResetPressedEvent
        inputManager.OnResetPressed.AddListener(HandleReset);
         SetPins();
-        
-        // // Find all FallTrigger objects and add IncrementScore listener
-        // fallTriggers = FindObjectsByType<FallTrigger>(FindObjectsSortMode.None);
-        // foreach (FallTrigger pin in fallTriggers)
-        // {
-        //     pin.OnPinFall.AddListener(IncrementScore);
-        // }
+    
     }
 
     private void HandleReset()
@@ -51,18 +45,9 @@ public class GameManager : MonoBehaviour
             pin.OnPinFall.RemoveListener(IncrementScore);
         }
     }
-
-        // Instantiate a new set of pins at the pin anchor transform
-        // pinObjects = Instantiate(pinCollection, pinAnchor.transform.position, Quaternion.identity, transform);
-        // pinObjects = Instantiate(pinCollection, pinAnchor.transform.position, Quaternion.identity);
             pinObjects = Instantiate(pinCollection, pinAnchor.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
             pinObjects.transform.Rotate(0, -270, 0);
 
-
-
-
-        // Find all new FallTrigger objects and add IncrementScore listener
-        // fallTriggers = FindObjectsByType<FallTrigger>(FindObjectsSortMode.None);
             fallTriggers = pinObjects.GetComponentsInChildren<FallTrigger>();
 
         foreach (FallTrigger pin in fallTriggers)

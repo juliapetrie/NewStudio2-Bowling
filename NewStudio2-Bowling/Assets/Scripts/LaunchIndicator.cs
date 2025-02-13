@@ -11,7 +11,6 @@ public class LaunchIndicator : MonoBehaviour
     void Update()
     {
 
-        //  if (freeLookCamera == null || ball == null) return; 
                 transform.position = ball.position + freeLookCamera.transform.forward * 3f; 
 
         //restrict indicator from dropping below Y axis
@@ -19,10 +18,7 @@ public class LaunchIndicator : MonoBehaviour
 
         transform.forward = freeLookCamera.transform.forward;
         transform.rotation = Quaternion.Euler(0,transform.rotation.eulerAngles.y,0);
-        // transform.forward = new Vector3(freeLookCamera.transform.forward.x, 0, freeLookCamera.transform.forward.z);
-       
-
-        // Debug.Log(transform.rotation.eulerAngles);
+     
     }
 
 }

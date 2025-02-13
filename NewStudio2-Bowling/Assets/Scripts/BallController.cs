@@ -13,10 +13,6 @@ public class BallController : MonoBehaviour
     [SerializeField] private InputManager inputManager;
     
 
-    // private InputManager inputManager;
-
-
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,9 +24,7 @@ public class BallController : MonoBehaviour
         // When the space key is pressed the
         // LaunchBall method will be called.
         inputManager.OnSpacePressed.AddListener(LaunchBall);
-        // transform.parent = ballAnchor;
-        // transform.localPosition = Vector3.zero;
-        // ballRB.isKinematic = true;
+      
         ResetBall();
 
     }
@@ -59,9 +53,5 @@ public class BallController : MonoBehaviour
         transform.localPosition = Vector3.zero;
     }
 
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
+    
 }
