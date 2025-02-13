@@ -89,6 +89,8 @@ public class GameManager : MonoBehaviour
         // pinObjects = Instantiate(pinCollection, pinAnchor.transform.position, Quaternion.identity, transform);
         // pinObjects = Instantiate(pinCollection, pinAnchor.transform.position, Quaternion.identity);
             pinObjects = Instantiate(pinCollection, pinAnchor.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+            pinObjects.transform.Rotate(0, -270, 0);
+
 
 
 
