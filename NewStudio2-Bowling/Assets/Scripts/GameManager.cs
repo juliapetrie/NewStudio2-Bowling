@@ -1,8 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private float score = 0;
+    // [SerializeField] private TextMeshPro scoreText;
+    [SerializeField] private TextMeshProUGUI scoreText;
+
     private FallTrigger[] pins;
     private void Start(){
         //We find all objects of type FallTrigger
@@ -18,6 +22,8 @@ public class GameManager : MonoBehaviour
     private void IncrementScore()
     {
        score++; 
+       scoreText.text = $"Score: {score}";
+
     }
    
 }
