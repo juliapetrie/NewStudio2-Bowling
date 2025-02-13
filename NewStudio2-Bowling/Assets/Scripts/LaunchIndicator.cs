@@ -12,7 +12,7 @@ public class LaunchIndicator : MonoBehaviour
     {
 
         //  if (freeLookCamera == null || ball == null) return; 
-                transform.position = ball.position + freeLookCamera.transform.forward * 2f; 
+                transform.position = ball.position + freeLookCamera.transform.forward * 3f; 
 
         //restrict indicator from dropping below Y axis
   transform.position = new Vector3(transform.position.x, Mathf.Max(transform.position.y, ball.position.y), transform.position.z);
